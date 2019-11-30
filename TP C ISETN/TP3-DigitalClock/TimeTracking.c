@@ -13,6 +13,7 @@ in c programming language
 //#include<string.h>
 //#include<math.h>
 #include<conio.h>
+#include<windows.h>
 
 int main(){
   //WELCOME Part ...
@@ -30,10 +31,7 @@ int main(){
       for(second;second<60;second++){
         system("cls");//Clear The Screen ...
         printf("\n\n\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\t%d:%d:%d  \n",hour,min,second);
-        for(double i=0; i<120000000;i++){
-          i++;
-          i--;
-        }
+        Sleep(1000);
       }
       second = 0;
      }

@@ -10,7 +10,7 @@ in c programming language
 //#include<string.h>
 //#include<math.h>
 
-int main(){
+int main(void){
   //WELCOME Part ...
   printf("\n\n        <<<<<   Hello World ! :) >>>>>\n\n\n");
   //Declaration Part...

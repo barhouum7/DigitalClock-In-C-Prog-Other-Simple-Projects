@@ -11,11 +11,12 @@ verify the sign of product of two numbers...
 #include<conio.h>
 
 int main(){
-  printf("\n\n                <<<<<<   Hello World ! :)   >>>>>>\n");
+
+  printf("\n\n                <<<<<<   Hello World ! :)   >>>>>>\n");//WELCOME Part ?\?/
   int a,b;
   printf("\n  :: Enter two numbers Please : ");
   scanf("%d %d",&a,&b);
-  if((a==0 || b==0) || (a==0 && b==0)){
+  if(a==0 || b==0){
     printf("\n\n  :: The sign of product of this two numbers is NULL(0).\n\n");
   }else if((a>0 && b>0) || (a<0 && b<0)){
     printf("\n\n  :: The sign of product of this two numbers is Positive.\n\n");
