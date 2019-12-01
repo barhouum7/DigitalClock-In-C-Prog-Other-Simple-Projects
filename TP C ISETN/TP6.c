@@ -171,6 +171,25 @@ int main(void){
     printf("\t%d",u2[i]);
 
 
+  /* ============================================================================================ */
+  /* ===============================  1st Solution... | EX | =================================== */
+  /* ============================================================================================ */
+
+    /*
+      * C Program To Print Smallest and Biggest
+       possible Word which is Palindrome in a given String..
+      * Solution without Functions ..
+    */
+  //Declaration Part ...
+  char string[100];
+  int i;
+  printf("\n\n\t\t\t Enter a string here : ");
+  for(i=0;(string[i] = getchar()) != '\n';i++);
+
+  for(i=0;string[i];i++){
+
+  }
+
 
 
   /* ----------------------------------------------------------------------------------------------------------------------- */
