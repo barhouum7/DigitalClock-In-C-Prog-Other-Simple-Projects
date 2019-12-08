@@ -175,22 +175,64 @@ int main(void){
   /* ===============================  1st Solution... | EX | =================================== */
   /* ============================================================================================ */
 
-    /*
-      * C Program To Print Smallest and Biggest
-       possible Word which is Palindrome in a given String..
-      * Solution without Functions ..
-    */
-  //Declaration Part ...
-  char string[100];
-  int i;
-  printf("\n\n\t\t\t Enter a string here : ");
-  for(i=0;(string[i] = getchar()) != '\n';i++);
+  //   /*
+  //     * C Program To Print Smallest and Biggest
+  //      possible Word which is Palindrome in a given String..
+  //     * Solution without Functions ..
+  //   */
+  // //Declaration Part ...
+  // char string[100];
+  // int i;
+  // printf("\n\n\t\t\t Enter a string here : ");
+  // for(i=0;(string[i] = getchar()) != '\n';i++);
+  //
+  // for(i=0;string[i];i++){
+  //
+  // }
 
-  for(i=0;string[i];i++){
 
+  /* ============================================================================================ */
+  /* ===============================  1st Solution... | EX 7.9 | =================================== */
+  /* ============================================================================================ */
+
+  int tab[20][20];
+  int i,j,ligne,colonne;
+
+  for(i=0;i<8;i++){
+    for(j=0;j<8;j++){
+        tab[i][j] = 0;
+    }
   }
+  /*============= Affichage Tab ==================*/
+  printf("\n\n\t\t\t Tab[][] =  \n\n");
+  for(i=0;i<8;i++){
+    for(j=0;j<8;j++){
+        printf("%d\t",tab[i][j]);
+    }
+    printf("\n\n");
+  }
+  /*============= Traitement ==================*/
+  do{
+    printf("\n\n\t\t\t Enter ligne : ");
+    scanf("%d",&ligne);
+  }while(ligne<0 || ligne>8);
+  do{
+    printf("\n\n\t\t\t Enter Colonne : ");
+    scanf("%d",&colonne);
+  }while(colonne<0 || colonne>8);
 
-
+  for(i=0;i<8;i++){
+    tab[i][colonne] = 1;
+    tab[ligne][i] = 1;
+  }
+  /*============= Affichage Tab ==================*/
+  printf("\n\n\t\t\t Tab[][] =  \n\n");
+  for(i=0;i<8;i++){
+    for(j=0;j<8;j++){
+        printf("%d\t",tab[i][j]);
+    }
+    printf("\n\n");
+  }
 
   /* ----------------------------------------------------------------------------------------------------------------------- */
 printf("\n\n\n\n\n              |    Mind Hackers ! - Some Exercises on Strings.   ^,^    |");
